@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me of the Screen Infograph</title>
+
+    <meta content="">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(function() {
+	$("#visible").click(function() {
+	    $('#invisible').toggleClass("show");
+	  });  
+	});
+    </script>
+    <style>
+        *{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: 'rocko1';
+    src: url(fonts/RockoFLF.ttf);
+}
+
+@font-face {
+    font-family: 'rocko2';
+    src: url(fonts/RockoFLF-Bold.ttf);
+}
+
+    h1{
+    font-family:sans-serif;
+    color: rgb(137, 137, 137);
+    font-weight: 200;
+    }
+
+  .p1{
+    width: 699px;
+    position: relative;
+    left: -19px;
+    font: 100;
+    font-family:sans-serif;
+    color: rgb(137, 137, 137);
+    font-size: smaller;
+  }
+
+    .h2-1{
+    font-family: 'rocko2';
+    letter-spacing: 1px;
+    color: rgb(122, 82, 192);
+    font-weight: 200;
+    position: relative;
+    top: 40px;
+    left: -20px;
+    font-size: x-large;
+
+    }
+
+    .h2-2{
+    font-family: 'rocko1';
+    color: rgb(122, 82, 192);
+    font-weight: 200;
+    position: relative;
+    top: -27px;
+    left: 615px;
+    font-size: x-large;
+
+    }
+
+    .square{
+    width: 652px;
+    height: 1px;
+    position: relative;
+    top: 20px;
+    background: rgb(137, 137, 137);
+    }
+    
+        .button {
+          border: none;
+          color: white;
+          width: 25px;
+    height: 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+        
+        .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid rgb(137, 137, 137);
+          position: relative;
+          top: -9px;
+          left: 15px;
+        }
+        
+        .button1:hover {
+          background-color: rgb(122, 82, 192);
+          border: 2px solid rgb(122, 82, 192);
+
+        }
+        
+        .button2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid rgb(137, 137, 137);
+          position: relative;
+          top: 10px;
+        left: 15px;
+        }
+        
+        .button2:hover {
+          background-color: rgb(122, 82, 192);
+          border: 2px solid rgb(122, 82, 192);
+
+        }
+        .hide{display:none;}
+      .show{display:block;}
+
+
+      .visible1{
+        position: relative;
+          top: -18px;
+        left: -2px;
+        font: 100;
+    font-family:sans-serif;
+    color: rgb(33, 33, 33);
+    font-size:15px;
+      }
+
+      .hidden1{
+        position: relative;
+          top: -64px;
+        left: -288px;
+        font: 100;
+    font-family:sans-serif;
+    color: rgb(137, 137, 137);
+    font-size:15px;
+    width: 700px;
+      }
+
+      .square2{
+    width: 652px;
+    height: 1px;
+    position: relative;
+    background: rgb(137, 137, 137);
+    }
+
+</style>
+
+</head>
+
+<body>
+       
+<h1>Me of the Screen Infographic: Reminders App</h1>
+<div class="p1"><p>This is an infographic about my use of the Reminders app on my phone. It was created for Graphic Design 2 for the "Me of the Screen" assignment. Click on each reminder below to reveal the data I collected over a few weeks about how the Reminders app impacts my daily life.</p> </div>
+
+<div class="square"></div>
+
+<div class="h2-1"><h2>Reminders</h2></div>
+<div class="h2-2"><h2>2</h2></div>
+
+
+
+<button class="button button1"> <div class="visible1"><p id="visible"> Click</p> </div><br>
+  <div class="hidden1"> <p id="invisible" class="hide">See me now!</p> </div> </button>
+
+  <div class="square2"></div>
+
+
+<button class="button button2"> </button>
+</body>
+</html>
